@@ -8,6 +8,8 @@
 
 工具使用模块化进行开发
 
+需要事先安装的依赖库
+
 
 
 ## templates
@@ -62,4 +64,26 @@ buf="\xfc\x48\x83\xe4\xf0\xe8\xc0\x00\x00\x00"
 最后可以选择打包方法
 
 ![image-20250622235956087](https://hongmengshikong.oss-cn-wuhan-lr.aliyuncs.com/img_for_note/202506222359144.png)
+
+## 注意事项：
+
+### 1.nuitka打包
+
+该打包方法使用 **Nuitka** 和 **MSVC 编译器** 
+
+需要事先安装Visual Studio，同时预先运行命令
+
+```cmd
+python -m nuitka --msvc=latest --standalone --onefile  --output-filename=loader_enc.exe loader_enc.py
+```
+
+nuitka会自行安装缺少的文件
+
+### 2.py2exe打包
+
+由于开发时项目使用的是Python 3.13.5
+
+因此并未测试实际打包效果
+
+
 
