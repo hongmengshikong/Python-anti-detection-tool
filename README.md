@@ -10,6 +10,13 @@
 
 需要事先安装的依赖库
 
+```
+Cryptodomex
+cx_Freeze
+PyInstaller
+nuitka
+```
+
 
 
 ## templates
@@ -78,6 +85,8 @@ python -m nuitka --msvc=latest --standalone --onefile  --output-filename=loader_
 ```
 
 nuitka会自行安装缺少的文件
+
+![image-20250623003819042](https://hongmengshikong.oss-cn-wuhan-lr.aliyuncs.com/img_for_note/202506230039870.png)
 
 ### 2.py2exe打包
 
